@@ -1,7 +1,7 @@
 const connectToMongo = require('./db')
 const express = require('express')
 var cors = require('cors')
-const Note = require('../models/Note')
+const Note = require('./models/Note')
 
 // Connect to database
 connectToMongo();
