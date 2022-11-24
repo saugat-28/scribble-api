@@ -25,7 +25,7 @@ app.get('/', (req, res) => {
 })
 
 // TEST ROUTE: Get All the Notes using: GET "/fetch". Login Required
-router.get('/fetch', fetchuser, async (req, res) => {
+app.get('/fetch', fetchuser, async (req, res) => {
   try {
       // Fetch all notes that have user ID matching current user and return
       const notes = await Note.find();
