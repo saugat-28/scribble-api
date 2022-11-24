@@ -15,8 +15,8 @@ app.use(express.json())
 app.use(cors())
 
 // Available Routes
-app.use('/api/auth', require('./Routes/auth'))
-app.use('/api/notes', require('./Routes/notes'))
+app.use('/api/auth', require('./routes/auth'))
+app.use('/api/notes', require('./routes/notes'))
 
 // Display the following on Default localhost page on server Port
 app.get('/', (req, res) => {
