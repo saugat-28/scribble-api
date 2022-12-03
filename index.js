@@ -25,5 +25,5 @@ app.get('/', (req, res) => {
 
 // Start Server to Listen on Localhost's Port
 app.listen(process.env.PORT || 3000, () => {
-  console.log(`Scribble-Server is listening on port ${port}`)
+  console.log(`Scribble-Server is listening on port ${process.env.PORT}`)
 })
